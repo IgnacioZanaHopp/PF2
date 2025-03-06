@@ -1,0 +1,3 @@
+<mat-card *ngFor="let alumno of alumnos$ | async">
+    <mat-card-title>{{ alumno.nombre }} {{ alumno.apellido }}</mat-card-title>
+</mat-card>
