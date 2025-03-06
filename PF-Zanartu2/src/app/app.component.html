@@ -1,7 +1,28 @@
-<app-toolbar></app-toolbar>
-<div class="d-flex">
-  <app-sidebar></app-sidebar>
-  <div class="flex-grow-1 p-3">
-    <router-outlet></router-outlet>
-  </div>
-</div>
+<!-- src/app/components/app.component.html (ejemplo) -->
+<mat-sidenav-container fullscreen>
+
+  <!-- Barra lateral -->
+  <mat-sidenav mode="side" opened>
+    <mat-toolbar color="primary">Panel</mat-toolbar>
+
+    <mat-nav-list>
+      <mat-list-item routerLink="/alumnos" routerLinkActive="active">Alumnos</mat-list-item>
+      <mat-list-item routerLink="/cursos" routerLinkActive="active">Cursos</mat-list-item>
+      <mat-list-item routerLink="/clases" routerLinkActive="active">Clases</mat-list-item>
+      <!-- Agrega más enlaces según tus módulos -->
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Contenido principal -->
+  <mat-sidenav-content>
+    <!-- Toolbar superior -->
+    <mat-toolbar color="primary">
+      <span>Mi Proyecto Final</span>
+    </mat-toolbar>
+
+    <div style="padding: 16px;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
