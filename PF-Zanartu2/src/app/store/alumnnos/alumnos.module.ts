@@ -1,4 +1,3 @@
-// src/app/pages/alumnos/alumnos.module.ts
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AlumnosRoutingModule } from './alumnos-routing.module';

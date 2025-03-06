@@ -1,20 +1,21 @@
-html,
-body {
-    margin: 0;
-    height: 100%;
-}
+@use '@angular/material' as mat;
 
-.mat-sidenav-container,
-.mat-sidenav-content {
-    height: 100%;
-}
+// Importa los estilos base de Angular Material
+@include mat.core();
 
-html,
-body {
-    height: 100%;
+// Aplica un tema predefinido de Angular Material
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+// Reglas CSS generales
+html, body {
+  margin: 0;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-sidenav-container, .mat-sidenav-content {
+  height: 100%;
 }
